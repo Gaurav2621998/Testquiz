@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="4dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:elevation="3dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:src="@drawable/bookdash_icon"
+            android:id="@+id/newsimage"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+
+            />
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_below="@+id/newsimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:textStyle="bold"
+                android:text="Date : 26/02/1998"
+                android:textSize="15sp"
+                android:fontFamily="@font/googlesan"
+
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/count"
+                    android:layout_alignParentRight="true"
+                    android:text="0"
+                    android:textSize="25sp"
+                    android:layout_marginRight="50dp"
+                    />
+                <ImageView
+                    android:id="@+id/claping"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/clapping_white"
+                    android:background="#ffffff"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    />
+            </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:id="@+id/title1"
+            android:textStyle="bold"
+            android:text="For updated questions"
+            android:textSize="18sp"
+            android:fontFamily="@font/googlesan"
+
+            />
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="questions are"
+           android:textSize="14sp"
+           android:textStyle="normal"
+            android:layout_marginTop="2dp"
+           android:fontFamily="@font/googlesan"
+           android:id="@+id/desc1"
+           card_view:trimCollapsedText="...Read More"
+           card_view:trimExpandedText="....Show Less"
+           card_view:trimLength="80"
+           card_view:trimMode="trimModeLength"
+           />
+        </LinearLayout>
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

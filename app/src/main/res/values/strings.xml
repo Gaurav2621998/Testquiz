@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">  BookDesk</string>
+
+    <string name="slide_1_title">Study Material</string>
+    <string name="slide_1_desc">Get Content to Learn and Store in form of Notes..!!!</string>
+
+    <string name="slide_2_title">Tutorials</string>
+    <string name="slide_2_desc">See the video to Learn concepts..!!</string>
+
+    <string name="slide_3_title">Updates</string>
+    <string name="slide_3_desc">Get the important question to solve.</string>
+
+    <string name="About">
+        This app is designed by Lakshya Coaching Classes .
+\n
+        This app provides you best notes for your studies with all important content like important questions,Past Year Papers,extra Question papers and much more.This app is designed to help students of Class 10th in their studies from their handheld device at a very low cost.
+        This App is only for Hindi Medium Students.
+        All the content provided in this app is authenticated or rechecked in the supervision of experts...
+\n
+\n
+        lakshya team- Tulsi ram dangi (engineer)
+        Madan lal dangi (engineer)
+        Pawan panwar (b.com)
+
+    </string>
+    <string name="Privacy">
+        1. The user data use for the purpose of purchasing paid content from the app.The following data will be used :
+\nA. User profile Name
+\nB. Email id
+\nC. User profile picture  \n
+
+2. Ads shown in app is third parties ads and we doesn\'t responsible for any inconvenience caused of this ads purchases.
+\n
+3. Though we take proper caution while selecting this data however there may be some mistake in data due to human tendency. We are not responsible for those mistakes
+\n
+4. If any copyright issue occur then Copyright cases would be deals in  jurisdiction of Udaipur
+  \n
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open drawer</string>
+    <string name="navigation_drawer_close">Close drawer</string>
+    <string name="contactdetails">Contact to that Mobile No. 66825414512 for Buy</string>
+
+</resources>

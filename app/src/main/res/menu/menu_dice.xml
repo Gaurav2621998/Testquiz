@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/AboutUs"
+        android:title="About_Us"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/Share"
+        android:title="Share"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/Review"
+        android:title="Review"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/Privacy"
+        android:title="Privacy_Policy"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+   
+
+</menu>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:elevation="3dp"
+    android:clickable="true"
+    android:layout_margin="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:id="@+id/linear"
+           android:padding="5dp"
+           android:layout_height="wrap_content"
+           >
+           <TextView
+               android:layout_width="50dp"
+               android:text="1"
+               android:textSize="20dp"
+               android:id="@+id/unit"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:textStyle="bold"
+               android:layout_height="50dp"
+               android:background="@drawable/round_textview"
+
+               />
+           <TextView
+               android:layout_marginRight="40dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="60dp"
+
+               android:layout_centerVertical="true"
+               android:textAlignment="center"
+               android:id="@+id/heading"
+               android:fontFamily="@font/googlesan"
+               android:text="hello"
+               android:textSize="16sp"
+               />
+           <ImageView
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:src="@drawable/icon_paid"
+               android:id="@+id/paid"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentRight="true"
+
+               />
+           <ImageView
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_centerVertical="true"
+               android:src="@drawable/icons_downloading"
+               android:layout_alignParentRight="true"
+               android:id="@+id/bookstatus"
+               />
+
+
+       </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
