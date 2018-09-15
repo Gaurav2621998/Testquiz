@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar"
+        android:background="#f5af19"
+        tools:targetApi="lollipop_mr1"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginRight="88dp"
+            android:layout_height="wrap_content"
+            android:text="Quiz Title"
+            android:textAlignment="center"
+            android:id="@+id/quizTitle"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timer"
+            android:gravity="center"
+            android:id="@+id/timer"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textSize="24dp"
+            />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:id="@+id/backarrow"
+                android:visibility="gone"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                android:layout_alignParentRight="true"
+
+                />
+
+
+        </RelativeLayout>
+    </Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:layout_above="@+id/adView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/quizrecycler"
+        android:nestedScrollingEnabled="false"
+        android:layout_below="@+id/appbar"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:text="SUBMIT"
+        android:background="#a34996ec"
+        android:layout_below="@+id/quizrecycler"
+        />
+
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        >
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+
+
+</RelativeLayout>

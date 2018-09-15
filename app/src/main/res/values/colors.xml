@@ -5,6 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <color name="card_view">#77938f96</color>
 
+    <color name="colorbackground">#f5af19</color>
+
     <color name="bg_screen1">#e2dddd</color>
     <color name="bg_screen2">#FFC371</color>
     <color name="bg_screen4">#8F8D8D</color>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#78ffd6"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Quiz"
+        android:textAlignment="center"
+        android:fontFamily="@font/googlesan"
+        android:textColor="#d4e29228"
+        android:textSize="32sp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="50dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Details"
+            android:fontFamily="@font/googlesan"
+            android:textSize="24dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:id="@+id/username"
+            android:padding="16dp"
+            android:fontFamily="@font/googlesan"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="text"
+
+            />
+        <EditText
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Mobile No."
+            android:fontFamily="@font/googlesan"
+            android:id="@+id/usermobile"
+            android:padding="16dp"
+            android:inputType="number"
+            android:background="#ffffff"
+            android:minEms="10"
+            android:maxLength="10"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:textSize="20dp"
+            android:fontFamily="@font/googlesan"
+            android:textStyle="bold"
+            android:textColor="#78ffd6"
+            android:padding="8dp"
+            android:elevation="24dp"
+            android:id="@+id/startbutton"
+            android:layout_marginTop="24dp"
+            android:background="#ffffff"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="post"
+            android:visibility="gone"
+            android:id="@+id/post"
+            />
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+
+
+</RelativeLayout>

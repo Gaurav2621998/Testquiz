@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.book.gourav.bookapp">
+    package="com.class10maths">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -15,6 +17,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <!-- <provider -->
+        <!-- android:name="android.support.v4.content.FileProvider" -->
+        <!-- android:authorities="com.class10maths" -->
+        <!-- android:exported="false" -->
+        <!-- android:grantUriPermissions="true"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.FILE_PROVIDER_PATHS" -->
+        <!-- android:resource="@xml/file_paths" /> -->
+        <!-- </provider> -->
+
         <activity
             android:name=".activity.MainActivity"
             android:screenOrientation="userPortrait"
@@ -28,32 +41,46 @@
         <activity
             android:name=".activity.Main3Activity"
             android:screenOrientation="userPortrait"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity
             android:name=".activity.Main4Activity"
-            android:screenOrientation="userPortrait"
-            />
+            android:screenOrientation="userPortrait" />
         <activity
             android:name=".activity.ImageFull_screen"
             android:parentActivityName=".activity.Main2Activity"
-            android:theme="@style/Theme.Design.Light.NoActionBar"
-            android:screenOrientation="userPortrait" />
+            android:screenOrientation="userPortrait"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity
             android:name=".activity.Main2Activity"
             android:screenOrientation="userPortrait"
-
             android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity
             android:name=".activity.LoginActivity"
             android:screenOrientation="userPortrait"
             android:theme="@style/Theme.Design.NoActionBar" />
-        <activity android:name=".activity.Aboutus_Activity"
+        <activity
+            android:name=".activity.Aboutus_Activity"
+            android:parentActivityName=".activity.Main2Activity"
             android:screenOrientation="userPortrait"
-            android:theme="@style/Theme.Design.Light.NoActionBar"
-            android:parentActivityName=".activity.Main2Activity"/>
-        <activity android:name=".activity.Privacy_Policy"
-            android:theme="@style/Theme.Design.Light.NoActionBar"
-            android:screenOrientation="userPortrait" android:parentActivityName=".activity.Main2Activity"></activity>
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".activity.Privacy_Policy"
+            android:parentActivityName=".activity.Main2Activity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".activity.QuizActivity"
+            android:parentActivityName=".activity.Main2Activity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ResultActivity"
+            android:parentActivityName=".activity.Main2Activity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".activity.DetailsActivity"
+            android:screenOrientation="userPortrait"
+            ></activity>
     </application>
 
 </manifest>

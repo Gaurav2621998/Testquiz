@@ -23,8 +23,36 @@
           }
         },
         {
-          "client_id": "880298973987-cgpqkq82imd3d5gmkmmair098gf65t5f.apps.googleusercontent.com",
-          "client_type": 3
+          "client_id": "880298973987-apkbp7d2vmnbl4c34je24c00693mp2le.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.book.gourav.bookapp",
+            "certificate_hash": "9f5974c655253b08fec9bdac4bf52fa646acaf5e"
+          }
+        },
+        {
+          "client_id": "880298973987-27rectr6lrpknpqcf4ifuri83luv1npf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.book.gourav.bookapp",
+            "certificate_hash": "22cb9cd289c660eac8e14630ab138252823eb4e7"
+          }
+        },
+        {
+          "client_id": "880298973987-4pfflbl3q8e9r01khbj0qff516776tka.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.book.gourav.bookapp",
+            "certificate_hash": "9e8a850602853ebe8c0103c0a6db328096479202"
+          }
+        },
+        {
+          "client_id": "880298973987-hj37ub9het3buip6clb2tda7l76762cu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.book.gourav.bookapp",
+            "certificate_hash": "70ffede174dcde1ee348d8303424942ea996a22c"
+          }
         },
         {
           "client_id": "880298973987-cgpqkq82imd3d5gmkmmair098gf65t5f.apps.googleusercontent.com",
@@ -48,6 +76,37 @@
               "client_type": 3
             }
           ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880298973987:android:027b69ded51d9c07",
+        "android_client_info": {
+          "package_name": "com.class10maths"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "880298973987-cgpqkq82imd3d5gmkmmair098gf65t5f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPcEigDIbYu7CtQPbHfu_VzcY_mUGKhQI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2
