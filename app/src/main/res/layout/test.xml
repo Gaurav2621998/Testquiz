@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <android.support.v7.widget.CardView
+        android:id="@+id/CardforQuiz"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    app:cardElevation="3dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileimage_contactlink"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/alarm_clock"
+            android:layout_centerHorizontal="true"
+            />
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/profileimage_contactlink"
+            android:layout_width="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <TextView
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="Ques No."
+            android:layout_weight="1"
+            android:id="@+id/quescount"/>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"/>
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Quiz Time"
+            android:id="@+id/quiztime"/>
+        </LinearLayout>
+    <TextView
+        android:id="@+id/starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIME REMAINING"
+        android:textSize="22sp"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lin"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/startQuiz"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="5dp"
+        app:cardElevation="3dp"
+        android:layout_below="@id/starttime"
+        android:backgroundTint="@android:color/black"
+        >
+        <TextView
+            android:layout_margin="5dp"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Start Quiz"
+            />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startQuiz"
+        android:id="@+id/quizname"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/googlesan"
+        android:layout_margin="8dp"
+        android:text="jdsjf jdsn dsj dfsj dsj dv vfhfd hfdv dhfb fdvh fbh fdvcxhhdshhfd sdh SDFGb sfdhHDSCHdhcHCDXHVCHDSH"
+        />
+</RelativeLayout>
+    </android.support.v7.widget.CardView>
